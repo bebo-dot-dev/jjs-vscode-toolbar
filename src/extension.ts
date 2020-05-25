@@ -24,12 +24,7 @@ function registerFileCommands(context: vscode.ExtensionContext) {
     let newFileCmd = vscode.commands.registerCommand('jjstoolbar.newFile', () => {
         vscode.commands.executeCommand('workbench.action.files.newUntitledFile');
     });
-    context.subscriptions.push(newFileCmd);
-
-    let newFolderCmd = vscode.commands.registerCommand('jjstoolbar.newFolder', () => {
-        vscode.commands.executeCommand('explorer.newFolder');
-    });
-    context.subscriptions.push(newFolderCmd);
+    context.subscriptions.push(newFileCmd);    
             
     let saveCmd = vscode.commands.registerCommand('jjstoolbar.save', () => {
         let editor = vscode.window.activeTextEditor;
@@ -71,22 +66,7 @@ function registerFileCommands(context: vscode.ExtensionContext) {
     let openFileCmd = vscode.commands.registerCommand('jjstoolbar.openFile', () => {
         vscode.commands.executeCommand('workbench.action.files.openFile');
     });
-    context.subscriptions.push(openFileCmd);
-
-    let openRecentCmd = vscode.commands.registerCommand('jjstoolbar.openRecent', () => {
-        vscode.commands.executeCommand('workbench.action.quickOpenRecent');
-    });
-    context.subscriptions.push(openRecentCmd);
-
-    let openFolderCmd = vscode.commands.registerCommand('jjstoolbar.openFolder', () => {
-        vscode.commands.executeCommand('workbench.action.files.openFolder');
-    });
-    context.subscriptions.push(openFolderCmd);
-
-    let closeFolderCmd = vscode.commands.registerCommand('jjstoolbar.closeFolder', () => {
-        vscode.commands.executeCommand('workbench.action.closeFolder');
-    });
-    context.subscriptions.push(closeFolderCmd);
+    context.subscriptions.push(openFileCmd);    
 }
 
 /**
@@ -132,6 +112,17 @@ function registerEditorCommands(context: vscode.ExtensionContext) {
     });
     context.subscriptions.push(trimWhiteSpaceCmd);
 
+    let tabsToSpacesCmd = vscode.commands.registerCommand('jjstoolbar.tabsToSpaces', () => {
+        let editor = vscode.window.activeTextEditor;
+        if (!editor) {
+            return;
+        }
+        else {
+            vscode.commands.executeCommand('editor.action.indentationToSpaces');            
+        }
+    });
+    context.subscriptions.push(tabsToSpacesCmd);
+
     let toggleWordWrapCmd = vscode.commands.registerCommand('jjstoolbar.wordwrap', () => {
         vscode.commands.executeCommand('editor.action.toggleWordWrap');
     });
@@ -147,12 +138,12 @@ function registerEditorCommands(context: vscode.ExtensionContext) {
     });
     context.subscriptions.push(blockCommentCmd);
             
-    let uppercaseCmd = vscode.commands.registerCommand('jjstoolbar.caseUpper', () => {
+    let uppercaseCmd = vscode.commands.registerCommand('jjstoolbar.upperCase', () => {
         vscode.commands.executeCommand('editor.action.transformToUppercase');
     });
     context.subscriptions.push(uppercaseCmd);
 
-    let lowercaseCmd = vscode.commands.registerCommand('jjstoolbar.caseLower', () => {
+    let lowercaseCmd = vscode.commands.registerCommand('jjstoolbar.lowerCase', () => {
         vscode.commands.executeCommand('editor.action.transformToLowercase');
     });
     context.subscriptions.push(lowercaseCmd);

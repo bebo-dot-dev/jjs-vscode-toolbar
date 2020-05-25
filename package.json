@@ -18,7 +18,7 @@
             {
                 "command": "jjstoolbar.newFile",
                 "title": "New File",
-                "category": "ToolbarCommands",
+                "category": "JJSToolbarCommands",
                 "icon": {
                     "light": "./media/newfile-black.png",
                     "dark": "./media/newfile-white.png"
@@ -26,8 +26,8 @@
             },
             {
                 "command": "jjstoolbar.openFile",
-                "title": "Open File",
-                "category": "ToolbarCommands",
+                "title": "Open File...",
+                "category": "JJSToolbarCommands",
                 "icon": {
                     "light": "./media/newfolder-black.png",
                     "dark": "./media/newfolder-white.png"
@@ -36,7 +36,7 @@
             {
                 "command": "jjstoolbar.save",
                 "title": "Save",
-                "category": "ToolbarCommands",
+                "category": "JJSToolbarCommands",
                 "icon": {
                     "light": "./media/save-black.png",
                     "dark": "./media/save-white.png"
@@ -45,7 +45,7 @@
             {
                 "command": "jjstoolbar.saveAll",
                 "title": "Save All",
-                "category": "ToolbarCommands",
+                "category": "JJSToolbarCommands",
                 "icon": {
                     "light": "./media/saveall-black.png",
                     "dark": "./media/saveall-white.png"
@@ -54,12 +54,12 @@
             {
                 "command": "jjstoolbar.close",
                 "title": "Close",
-                "category": "ToolbarCommands"
+                "category": "JJSToolbarCommands"
             },
             {
                 "command": "jjstoolbar.closeAll",
                 "title": "Close All",
-                "category": "ToolbarCommands",
+                "category": "JJSToolbarCommands",
                 "icon": {
                     "light": "./media/closeall-black.png",
                     "dark": "./media/closeall-white.png"
@@ -68,7 +68,7 @@
             {
                 "command": "jjstoolbar.undo",
                 "title": "Undo",
-                "category": "ToolbarCommands",
+                "category": "JJSToolbarCommands",
                 "icon": {
                     "light": "./media/undo-black.png",
                     "dark": "./media/undo-white.png"
@@ -77,7 +77,7 @@
             {
                 "command": "jjstoolbar.redo",
                 "title": "Redo",
-                "category": "ToolbarCommands",
+                "category": "JJSToolbarCommands",
                 "icon": {
                     "light": "./media/redo-black.png",
                     "dark": "./media/redo-white.png"
@@ -86,7 +86,7 @@
             {
                 "command": "jjstoolbar.wordwrap",
                 "title": "Wordwrap",
-                "category": "ToolbarCommands",
+                "category": "JJSToolbarCommands",
                 "icon": {
                     "light": "./media/wordwrap-black.png",
                     "dark": "./media/wordwrap-white.png"
@@ -95,7 +95,7 @@
             {
                 "command": "jjstoolbar.lineComment",
                 "title": "Line Comment",
-                "category": "ToolbarCommands",
+                "category": "JJSToolbarCommands",
                 "icon": {
                     "light": "./media/sidebar-black.png",
                     "dark": "./media/sidebar-white.png"
@@ -104,7 +104,7 @@
             {
                 "command": "jjstoolbar.blockComment",
                 "title": "Block Comment",
-                "category": "ToolbarCommands",
+                "category": "JJSToolbarCommands",
                 "icon": {
                     "light": "./media/sidebar-black.png",
                     "dark": "./media/sidebar-white.png"
@@ -113,19 +113,21 @@
             {
                 "command": "jjstoolbar.saveAs",
                 "title": "Save As",
-                "category": "ToolbarCommands"
+                "category": "JJSToolbarCommands"
             },
             {
-                "command": "jjstoolbar.caseUpper",
+                "command": "jjstoolbar.upperCase",
                 "title": "Uppercase",
+                "category": "JJSToolbarCommands",
                 "icon": {
                     "light": "./media/arrow_upward.svg",
                     "dark": "./media/arrow_upward_light.svg"
                 }
             },
             {
-                "command": "jjstoolbar.caseLower",
+                "command": "jjstoolbar.lowerCase",
                 "title": "Lowercase",
+                "category": "JJSToolbarCommands",
                 "icon": {
                     "light": "./media/arrow_downward.svg",
                     "dark": "./media/arrow_downward_light.svg"
@@ -134,74 +136,79 @@
             {
                 "command": "jjstoolbar.prettifyJson",
                 "title": "Prettify Json",
-                "category": "ToolbarCommands"
+                "category": "JJSToolbarCommands"
             },
             {
                 "command": "jjstoolbar.formatXml",
                 "title": "Format XML",
-                "category": "ToolbarCommands"
+                "category": "JJSToolbarCommands"
+            },
+            {
+                "command": "jjstoolbar.tabsToSpaces",
+                "title": "Tabs to Spaces",
+                "category": "JJSToolbarCommands"
             },
             {
                 "command": "jjstoolbar.trimWhitespace",
                 "title": "Trim Whitespace",
-                "category": "ToolbarCommands"
+                "category": "JJSToolbarCommands"
             },
             {
                 "command": "jjstoolbar.languageMode",
                 "title": "Language Mode",
-                "category": "ToolbarCommands"
+                "category": "JJSToolbarCommands"
             }
         ],
         "menus": {
             "editor/title": [
                 {
                     "command": "jjstoolbar.newFile",
-                    "alt": "markdown.showPreview",
+                    "alt": "jjstoolbar.newFile",
                     "group": "navigation@1"
                 },
                 {
                     "command": "jjstoolbar.openFile",
-                    "alt": "markdown.showPreview",
+                    "alt": "jjstoolbar.openFile",
                     "group": "navigation@2"
                 },
                 {
                     "command": "jjstoolbar.save",
-                    "alt": "markdown.showPreview",
+                    "alt": "jjstoolbar.save",
                     "group": "navigation@3"
                 },
                 {
                     "command": "jjstoolbar.saveAll",
-                    "alt": "markdown.showPreview",
+                    "alt": "jjstoolbar.saveAll",
                     "group": "navigation@4"
                 },
                 {
                     "command": "jjstoolbar.undo",
-                    "alt": "markdown.showPreview",
+                    "alt": "jjstoolbar.undo",
                     "group": "navigation@5"
                 },
                 {
                     "command": "jjstoolbar.redo",
-                    "alt": "markdown.showPreview",
+                    "alt": "jjstoolbar.redo",
                     "group": "navigation@6"
                 },
                 {
                     "command": "jjstoolbar.closeAll",
-                    "alt": "markdown.showPreview",
+                    "alt": "jjstoolbar.closeAll",
                     "group": "navigation@7"
                 },
                 {
                     "command": "jjstoolbar.wordwrap",
-                    "alt": "markdown.showPreview",
+                    "alt": "jjstoolbar.wordwrap",
                     "group": "navigation@8"
                 },
                 {
-                    "command": "jjstoolbar.caseUpper",
-                    "alt": "markdown.showPreview",
+                    "command": "jjstoolbar.upperCase",
+                    "alt": "jjstoolbar.upperCase",
                     "group": "navigation@9"
                 },
                 {
-                    "command": "jjstoolbar.caseLower",
-                    "alt": "markdown.showPreview",
+                    "command": "jjstoolbar.lowerCase",
+                    "alt": "jjstoolbar.lowerCase",
                     "group": "navigation@10"
                 }
             ],
@@ -243,11 +250,11 @@
                     "group": "Group3@2"
                 },
                 {
-                    "command": "jjstoolbar.caseUpper",
+                    "command": "jjstoolbar.upperCase",
                     "group": "Group4@1"
                 },
                 {
-                    "command": "jjstoolbar.caseLower",
+                    "command": "jjstoolbar.lowerCase",
                     "group": "Group4@2"
                 },
                 {
@@ -261,12 +268,16 @@
                     "when": "editorLangId == xml"
                 },
                 {
-                    "command": "jjstoolbar.trimWhitespace",
+                    "command": "jjstoolbar.tabsToSpaces",
                     "group": "Group5@3"
                 },
                 {
-                    "command": "jjstoolbar.languageMode",
+                    "command": "jjstoolbar.trimWhitespace",
                     "group": "Group5@4"
+                },
+                {
+                    "command": "jjstoolbar.languageMode",
+                    "group": "Group5@5"
                 }
             ]
         }
