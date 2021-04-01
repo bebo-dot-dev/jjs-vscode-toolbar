@@ -3,7 +3,7 @@
     "name": "jjs-vscode-toolbar",
     "displayName": "jjs-vscode-toolbar",
     "description": "A VSCode Toolbar",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "engines": {
         "vscode": "^1.45.0"
     },
