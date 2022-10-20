@@ -292,7 +292,7 @@
         "test": "node ./out/test/runTest.js"
     },
     "devDependencies": {
-        "@types/vscode": "^1.45.0",
+        "@types/vscode": "^1.72.0",
         "@types/glob": "^8.0.0",
         "@types/mocha": "^7.0.2",
         "@types/node": "^13.11.0",
