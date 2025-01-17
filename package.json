@@ -308,5 +308,8 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/jjssoftware/jjs-vscode-toolbar"
+    },
+    "engines": {
+      "npm": ">=9"
     }
 }
