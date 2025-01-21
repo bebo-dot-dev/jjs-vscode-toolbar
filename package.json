@@ -5,7 +5,8 @@
     "description": "A VSCode Toolbar",
     "version": "0.0.5",
     "engines": {
-        "vscode": "^1.45.0"
+        "vscode": "^1.45.0",
+        "npm": ">=9"
     },
     "categories": [
         "Other"
@@ -308,8 +309,5 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/jjssoftware/jjs-vscode-toolbar"
-    },
-    "engines": {
-      "npm": ">=9"
     }
 }
