@@ -298,7 +298,7 @@
         "@types/glob": "^8.1.0",
         "@types/mocha": "^10.0.10",
         "@types/node": "^22.13.5",
-        "eslint": "^9.20.1",
+        "eslint": "^9.21.0",
         "@typescript-eslint/parser": "^8.24.1",
         "@typescript-eslint/eslint-plugin": "^8.25.0",
         "glob": "^11.0.1",
