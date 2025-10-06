@@ -300,7 +300,7 @@
         "@types/node": "^24.3.0",
         "eslint": "^9.34.0",
         "@typescript-eslint/parser": "^8.32.1",
-        "@typescript-eslint/eslint-plugin": "^8.41.0",
+        "@typescript-eslint/eslint-plugin": "^8.46.0",
         "glob": "^11.0.2",
         "mocha": "^11.7.1",
         "typescript": "^5.8.3",
