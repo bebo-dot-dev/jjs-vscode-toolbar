@@ -302,7 +302,7 @@
         "@typescript-eslint/parser": "^8.46.4",
         "@typescript-eslint/eslint-plugin": "^8.46.3",
         "glob": "^11.1.0",
-        "mocha": "^11.7.4",
+        "mocha": "^11.7.5",
         "typescript": "^5.9.3",
         "vscode-test": "^1.6.1"
     },
