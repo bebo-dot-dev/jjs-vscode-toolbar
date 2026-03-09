@@ -297,7 +297,7 @@
         "@types/vscode": "^1.109.0",
         "@types/glob": "^9.0.0",
         "@types/mocha": "^10.0.10",
-        "@types/node": "^25.2.2",
+        "@types/node": "^25.4.0",
         "eslint": "^10.0.2",
         "@typescript-eslint/parser": "^8.56.1",
         "@typescript-eslint/eslint-plugin": "^8.50.0",
